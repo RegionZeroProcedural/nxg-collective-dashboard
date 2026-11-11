@@ -1,5 +1,66 @@
 import { test, expect } from "@playwright/test";
 
+test("desktop overview fits the window without scrolling or clipping", async ({
+  page,
+}) => {
+  for (const [width, height] of [
+    [1920, 1080],
+    [1586, 992],
+    [1440, 900],
+    [1366, 768],
+    [1280, 720],
+    [1101, 720],
+    [1280, 650],
+  ]) {
+    await page.setViewportSize({ width, height });
+    await page.goto("/");
+    await expect(
+      page.getByRole("heading", { name: "Referrals & Rewards" }),
+    ).toBeVisible();
+    const dimensions = await page.evaluate(() => ({
+      width: document.documentElement.scrollWidth,
+      height: document.documentElement.scrollHeight,
+      clipped: [
+        ...document.querySelectorAll(
+          ".dashboard .panel, .sidebar, .compact-table",
+        ),
+      ]
+        .filter(
+          (el) =>
+            el.clientHeight &&
+            (el.scrollHeight > el.clientHeight + 1 ||
+              el.scrollWidth > el.clientWidth + 1),
+        )
+        .map((el) => el.className),
+      finalRowBottom: document
+        .querySelector(".compact-table tbody tr:last-child")!
+        .getBoundingClientRect().bottom,
+      tableBottom: document
+        .querySelector(".recent-panel")!
+        .getBoundingClientRect().bottom,
+    }));
+    expect(
+      dimensions.width,
+      `horizontal overflow at ${width}×${height}`,
+    ).toBeLessThanOrEqual(width);
+    expect(
+      dimensions.height,
+      `vertical overflow at ${width}×${height}`,
+    ).toBeLessThanOrEqual(height);
+    expect(dimensions.clipped, `clipped content at ${width}×${height}`).toEqual(
+      [],
+    );
+    expect(dimensions.finalRowBottom).toBeLessThanOrEqual(
+      dimensions.tableBottom,
+    );
+  }
+  await page.getByRole("button", { name: "View All Referrals" }).click();
+  await expect(
+    page.getByRole("dialog", { name: "All referrals" }),
+  ).toBeVisible();
+  await page.keyboard.press("Escape");
+});
+
 test.beforeEach(async ({ page }) => {
   await page.goto("/");
   await expect(

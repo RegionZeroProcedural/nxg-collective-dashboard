@@ -34,6 +34,8 @@ The tests use an installed Google Chrome browser. Change `channel` in `playwrigh
 
 The desktop layout keeps a fixed sidebar and staggered two-column panels. At tablet widths, the sidebar becomes a drawer and panels follow the mobile reference order. Small phones use two statistic columns. The compact mobile table shows the three businesses featured in the mobile mockup; **View All Referrals** exposes the full searchable and filterable dataset.
 
+The desktop overview adapts to the available window height through `app/viewport.css`. Its panels share the remaining space, and short windows scale the overview proportionally so every card and referral stays visible without scrolling. Mobile keeps the readable stacked layout. Long dialogs scroll independently.
+
 ## Working demo interactions
 
 The chart switches between three and six months and shows values on hover, focus, or tap. Search, directory, referral filters/sorting, business details, tier benefits, notifications, project progress, teams, bounties, profile, settings, and messages all have working views. Copy controls use the clipboard API. Badge sharing downloads an SVG with the supplied logo or copies a website embed.

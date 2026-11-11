@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "./responsive.css";
 import "./refinements.css";
+import "./viewport.css";
 
 export const metadata: Metadata = {
   title: "Referrals & Rewards | NXG Collective",
