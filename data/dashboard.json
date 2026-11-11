@@ -1,0 +1,313 @@
+{
+  "user": {
+    "name": "Keegan LaBrot",
+    "firstName": "Keegan",
+    "role": "Verified Member",
+    "email": "keegan@nxgcollective.com",
+    "referralUrl": "https://nxgcollectivehq.com/ref/keegan",
+    "referralCode": "KEEGAN-NXG"
+  },
+  "intro": {
+    "eyebrow": "PARTNER DASHBOARD",
+    "title": "Referrals & Rewards",
+    "description": "Grow the NXG Collective network, refer businesses and clients, and earn commissions as they onboard and scale."
+  },
+  "stats": [
+    {
+      "label": "Total Referrals",
+      "value": "47",
+      "change": "+34%",
+      "detail": "vs. last 30 days",
+      "icon": "users",
+      "color": "cyan"
+    },
+    {
+      "label": "Verified Signups",
+      "value": "33",
+      "change": "+50%",
+      "detail": "vs. last 30 days",
+      "icon": "shield",
+      "color": "aqua"
+    },
+    {
+      "label": "Active Businesses",
+      "value": "14",
+      "change": "+27%",
+      "detail": "vs. last 30 days",
+      "icon": "building",
+      "color": "blue"
+    },
+    {
+      "label": "Conversion Rate",
+      "value": "70%",
+      "change": "+16 pts",
+      "detail": "vs. last 30 days",
+      "icon": "trend",
+      "color": "purple"
+    },
+    {
+      "label": "Pending Commission",
+      "value": "$2,450",
+      "change": "",
+      "detail": "6 conversions",
+      "icon": "layers",
+      "color": "purple"
+    },
+    {
+      "label": "Paid Earnings",
+      "value": "$8,730",
+      "change": "+42%",
+      "detail": "all time",
+      "icon": "wallet",
+      "color": "green"
+    }
+  ],
+  "growth": [
+    { "month": "Aug", "referrals": 7, "commission": 340 },
+    { "month": "Sep", "referrals": 10, "commission": 460 },
+    { "month": "Oct", "referrals": 18, "commission": 850 },
+    { "month": "Nov", "referrals": 25, "commission": 1230 },
+    { "month": "Dec", "referrals": 34, "commission": 1750 },
+    { "month": "Jan", "referrals": 44, "commission": 2250 }
+  ],
+  "tier": {
+    "name": "Silver Partner",
+    "progress": 93,
+    "description": "Earn higher commissions, early access to opportunities, and priority support.",
+    "milestones": [93, 95, 98],
+    "benefits": [
+      {
+        "name": "Silver",
+        "rate": "10%",
+        "requirement": "Your current tier",
+        "features": [
+          "10% referral commissions",
+          "Priority partner support",
+          "Verified partner badge"
+        ]
+      },
+      {
+        "name": "Gold",
+        "rate": "15%",
+        "requirement": "50 verified referrals",
+        "features": [
+          "15% referral commissions",
+          "Early access to opportunities",
+          "Dedicated partner manager"
+        ]
+      },
+      {
+        "name": "Platinum",
+        "rate": "20%",
+        "requirement": "100 verified referrals",
+        "features": [
+          "20% referral commissions",
+          "Exclusive partner opportunities",
+          "Quarterly growth strategy sessions"
+        ]
+      }
+    ]
+  },
+  "metrics": [
+    {
+      "label": "On-time onboarding",
+      "value": "92%",
+      "progress": 92,
+      "target": "95%"
+    },
+    {
+      "label": "Lead-to-signup conversion",
+      "value": "70%",
+      "progress": 70,
+      "target": "75%"
+    },
+    {
+      "label": "Active business retention",
+      "value": "88%",
+      "progress": 88,
+      "target": "90%"
+    },
+    {
+      "label": "Partner rating (avg.)",
+      "value": "4.8 / 5.0",
+      "progress": 96,
+      "target": ""
+    }
+  ],
+  "referrals": [
+    {
+      "id": "av",
+      "name": "Apex Ventures",
+      "initials": "AV",
+      "location": "New York, United States",
+      "date": "2025-01-18",
+      "status": "Converted",
+      "commission": 1200,
+      "contact": "Jordan Ellis",
+      "email": "jordan@apex.example",
+      "description": "Business strategy and venture development."
+    },
+    {
+      "id": "bt",
+      "name": "BrightTech Solutions",
+      "initials": "BT",
+      "location": "Austin, United States",
+      "date": "2025-01-12",
+      "status": "Verified",
+      "commission": 750,
+      "contact": "Taylor Chen",
+      "email": "taylor@brighttech.example",
+      "description": "Technology consulting and software solutions."
+    },
+    {
+      "id": "cl",
+      "name": "Coastal Logistics",
+      "initials": "CL",
+      "location": "Miami, United States",
+      "date": "2025-01-08",
+      "status": "Contacted",
+      "commission": null,
+      "contact": "Alex Rivera",
+      "email": "alex@coastal.example",
+      "description": "Supply chain and logistics services."
+    },
+    {
+      "id": "nm",
+      "name": "Northstar Media",
+      "initials": "NM",
+      "location": "Chicago, United States",
+      "date": "2025-01-05",
+      "status": "Pending",
+      "commission": 500,
+      "contact": "Morgan Brooks",
+      "email": "morgan@northstar.example",
+      "description": "Creative media and digital marketing."
+    },
+    {
+      "id": "ev",
+      "name": "Evergreen Systems",
+      "initials": "EV",
+      "location": "Denver, United States",
+      "date": "2024-12-28",
+      "status": "Verified",
+      "commission": null,
+      "contact": "Casey Park",
+      "email": "casey@evergreen.example",
+      "description": "Sustainable business systems and operations."
+    },
+    {
+      "id": "or",
+      "name": "Orbit Creative",
+      "initials": "OC",
+      "location": "Seattle, United States",
+      "date": "2024-12-20",
+      "status": "Converted",
+      "commission": 950,
+      "contact": "Sam Lee",
+      "email": "sam@orbit.example",
+      "description": "Brand design and creative services."
+    },
+    {
+      "id": "su",
+      "name": "Summit Advisory",
+      "initials": "SA",
+      "location": "Boston, United States",
+      "date": "2024-12-15",
+      "status": "Pending",
+      "commission": 400,
+      "contact": "Jamie Ross",
+      "email": "jamie@summit.example",
+      "description": "Management consulting and business advisory."
+    }
+  ],
+  "notifications": [
+    {
+      "title": "Apex Ventures has converted!",
+      "body": "Your $1,200 commission is ready for review.",
+      "time": "2 hours ago"
+    },
+    {
+      "title": "You’re getting closer to Gold",
+      "body": "Keep sharing your referral link to unlock the next tier.",
+      "time": "5 hours ago"
+    },
+    {
+      "title": "BrightTech Solutions is verified",
+      "body": "Another business has joined your network.",
+      "time": "1 day ago"
+    }
+  ],
+  "messages": [
+    {
+      "id": "partner",
+      "name": "NXG Partner Success",
+      "initials": "NX",
+      "preview": "Welcome to the partner program! How can we help?",
+      "time": "10:42 AM",
+      "body": "Hi Keegan! You’re making great progress. Let us know if you need help onboarding your next referral. We’re here for you."
+    },
+    {
+      "id": "jordan",
+      "name": "Jordan Ellis",
+      "initials": "JE",
+      "preview": "Thanks for connecting us with NXG!",
+      "time": "Yesterday",
+      "body": "Thanks for the introduction, Keegan! Our team at Apex Ventures is excited to be part of the collective."
+    }
+  ],
+  "teams": [
+    {
+      "name": "Growth Partners",
+      "description": "Connect with partners building the NXG network.",
+      "members": 12
+    },
+    {
+      "name": "Creative Collective",
+      "description": "Design, content, and brand specialists.",
+      "members": 8
+    },
+    {
+      "name": "Technology Alliance",
+      "description": "Developers and technology consultants.",
+      "members": 16
+    }
+  ],
+  "projects": [
+    {
+      "name": "Partner onboarding hub",
+      "description": "Simplifying the journey for our newest members.",
+      "progress": 75
+    },
+    {
+      "name": "Collective brand refresh",
+      "description": "Building the next chapter of the NXG brand.",
+      "progress": 42
+    },
+    {
+      "name": "Community growth campaign",
+      "description": "Bringing exceptional businesses together.",
+      "progress": 90
+    }
+  ],
+  "bounties": [
+    {
+      "name": "Refer a technology partner",
+      "description": "Introduce a verified software or IT business.",
+      "reward": "$250"
+    },
+    {
+      "name": "Grow the creative network",
+      "description": "Connect a design studio with the collective.",
+      "reward": "$150"
+    },
+    {
+      "name": "Welcome your first five referrals",
+      "description": "Help five businesses complete onboarding.",
+      "reward": "$500"
+    }
+  ],
+  "badge": {
+    "title": "Share Your Verified Badge",
+    "description": "Build trust with potential clients and partners by showing your NXG Collective verified status."
+  }
+}

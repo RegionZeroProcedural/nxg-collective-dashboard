@@ -1,0 +1,141 @@
+/* Adjustments verified against the supplied mockups at their original widths. */
+@media (max-width: 1100px) {
+  .sidebar {
+    visibility: hidden;
+  }
+  .sidebar-open {
+    visibility: visible;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1250px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .stat-bottom {
+    justify-content: flex-start;
+    gap: 25px;
+  }
+}
+.stat-card:nth-child(5) .stat-number {
+  font-size: 30px;
+  line-height: 1.1;
+}
+.stat-card:nth-child(5) .stat-comparison small {
+  margin-top: 0;
+}
+@media (min-width: 701px) and (max-width: 1100px) {
+  .stat-card:nth-child(5) {
+    padding-top: 9px;
+    padding-bottom: 8px;
+  }
+  .stat-card:nth-child(5) .stat-bottom {
+    margin-top: 4px;
+  }
+  .stat-card:nth-child(5) .stat-number {
+    font-size: 33px;
+    line-height: 1.1;
+  }
+  .stat-card:nth-child(5) .stat-comparison small {
+    font-size: 14px;
+    line-height: 1;
+  }
+  .chart-wrap > svg {
+    height: 150px;
+    aspect-ratio: auto;
+  }
+}
+@media (max-width: 700px) {
+  .stat-card:nth-child(5) .stat-number {
+    font-size: 29px;
+  }
+  .chart-wrap > svg {
+    height: 125px;
+  }
+}
+@media (max-width: 370px) {
+  .mobile-brand .brand {
+    width: 120px;
+    height: 42px;
+  }
+  .header-actions {
+    gap: 9px;
+  }
+  .header-actions .circle-button {
+    width: 32px;
+    height: 32px;
+  }
+  .profile-button .avatar {
+    width: 32px;
+    height: 32px;
+    background-size: 1080px 675px;
+    background-position: -16px -65px;
+  }
+  .topbar {
+    height: 75px;
+  }
+  .stat-card {
+    padding-left: 10px;
+    padding-right: 8px;
+  }
+  .stat-heading {
+    gap: 6px;
+    white-space: normal;
+  }
+  .stat-heading h2 {
+    font-size: 11px;
+  }
+  .stat-heading svg {
+    width: 20px;
+    height: 20px;
+  }
+  .stat-bottom {
+    gap: 7px;
+  }
+  .stat-number,
+  .stat-card:nth-child(5) .stat-number {
+    font-size: 25px;
+  }
+  .stat-card:nth-child(6) .stat-bottom {
+    display: block;
+  }
+  .stat-card:nth-child(6) .stat-comparison {
+    padding-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .stat-comparison small {
+    font-size: 8px;
+  }
+  .stat-card:nth-child(6) .stat-comparison small {
+    margin-top: 0;
+  }
+  .intro-actions .button {
+    font-size: 10px;
+    padding: 0 7px;
+    gap: 5px;
+  }
+  .code-side {
+    gap: 7px;
+  }
+  .code-side h3 {
+    font-size: 11px;
+  }
+  .code-copy {
+    min-width: 137px;
+    font-size: 11px;
+    padding: 0 8px;
+  }
+  .compact-table .initials {
+    display: none;
+  }
+  .compact-table .commission-cell {
+    font-size: 10px;
+    min-width: 50px;
+    padding-left: 4px;
+  }
+  .compact-table .status {
+    font-size: 9px;
+    padding: 6px 5px;
+  }
+}
